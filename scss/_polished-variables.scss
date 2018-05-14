@@ -1,0 +1,39 @@
+
+
+$indigo-darker: #06064A;
+$indigo-dark: #21245E;
+$indigo: #45477C;
+
+$theme-colors: (
+  "primary": polarisColor(indigo),
+  "secondary": polarisColor(sky, lighter),
+  "success": polarisColor(green),
+  "warning": polarisColor(yellow),
+  "danger": polarisColor(red),
+  "info": polarisColor(blue),
+  "light": polarisColor(sky, light),
+  // "secondary": polarisColor(ink, lightest),
+  "dark": polarisColor(ink),
+
+  "blue": polarisColor(blue),
+  "purple": polarisColor(purple),
+  "teal": polarisColor(teal),
+  "orange": polarisColor(orange)
+);
+
+
+
+// $font-family-sans-serif: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+$spacer: 1rem;
+
+// $dark:          $gray-800;
+// $shopify-dark-darker: $gray-900;
+
+// $shopify-dark-lighter: #637284;
+// $shopify-dark: $gray-800;
+
+$navbar-padding-y: ($spacer / 2);
+$navbar-padding-x:  $spacer;
+$navbar-brand-padding-y: 0.75rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,204 @@
+
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Base styles
+//
+
+.btn {
+  // Share hover and focus styles
+  @extend .fs-smaller;
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    background-image: none;
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    border: border(dark);
+    @if($color == "primary"){
+      @extend .Polaris-Button--primary;
+      border-color: polarisColor(indigo);
+      &:disabled{
+        border-color: lighten(polarisColor(indigo), 10%);
+      }
+    }
+
+    @if($color == "secondary"){
+      background: linear-gradient(to bottom, polarisColor(white), polarisColor(sky, lighter));
+      border-color: polarisColor(sky, dark);
+      &:hover{
+        border-color: polarisColor(sky, dark);
+        background: linear-gradient(to bottom, polarisColor(sky, lighter), polarisColor(sky, light));
+      }
+      &:disabled{
+        border-color: lighten(polarisColor(ink, lighter), 10%);
+      }
+    }
+
+    @if($color == "danger"){
+      @extend .Polaris-Button--destructive;
+      border-color: polarisColor(red);
+      &:disabled{
+        border-color: lighten(polarisColor(red), 10%);
+      }
+    }
+
+    @if($color == "warning"){
+      border-color: polarisColor(yellow);
+      &:disabled{
+        border-color: lighten(polarisColor(yellow), 10%);
+      }
+    }
+
+    @if($color == "success"){
+      border-color: polarisColor(green);
+      &:disabled{
+        border-color: lighten(polarisColor(green), 10%);
+      }
+    }
+
+    @if($color == "info"){
+      border-color: polarisColor(blue);
+      &:disabled{
+        border-color: lighten(polarisColor(blue), 10%);
+      }
+    }
+
+    @if($color == "dark"){
+      border-color: polarisColor(ink);
+      &:disabled{
+        border-color: lighten(polarisColor(ink), 10%);
+      }
+    }
+    @if($color == "light"){
+      border-color: polarisColor(sky);
+      &:disabled{
+        border-color: lighten(polarisColor(sky), 10%);
+      }
+    }
+
+    &:disabled{
+      @extend .Polaris-Button--disabled 
+    }
+
+
+  }
+
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+  font-weight: $font-weight-normal;
+  color: $link-color;
+  background-color: transparent;
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: $link-hover-decoration;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+
+  // No need for an active state here
+}
+
+
+//
+// Button Sizes
+//
+
+.btn-lg {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+}
+
+.btn-sm {
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+}
+
+
+//
+// Block button
+//
+
+.btn-block {
+  display: block;
+  width: 100%;
+
+  // Vertically space out multiple block buttons
+  + .btn-block {
+    margin-top: $btn-block-spacing-y;
+  }
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}

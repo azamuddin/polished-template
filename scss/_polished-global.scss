@@ -1,0 +1,286 @@
+html {
+  /* Load system fonts */
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe
+      UI, Helvetica Neue, sans-serif;
+
+  /* Make type rendering look crisper */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Disable auto-enlargement of small text in Safari */
+  text-size-adjust: 100%;
+
+  /* Enable kerning and optional ligatures */
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Form elements render using OS defaults,
+ * so font-family inheritance must be specifically declared
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+html,body{
+  height: 100%;
+  overflow: hidden;
+  background: polarisColor(sky, light);
+}
+
+html * {
+  font-family: -apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif,
+}
+
+main.container-fluid{
+  height:100%;
+}
+
+section.page{
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+
+.dropdown-toggle::after{
+  margin-top: 0.9rem;
+}
+
+.dropdown-menu{
+  min-width: 200px;
+}
+
+.bg-transparent{
+  background: transparent
+  
+  li,a{
+    background-color: transparent;
+  }
+}
+
+a, .btn-link{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+
+  &:active{
+    text-decoration: none;
+  }
+
+  &:visited{
+    text-decoration: none;
+  }
+
+  &:link{
+    text-decoration: none;
+  }
+}
+
+li.list-group-item{
+  text-decoration: none
+}
+
+
+
+.fw-normal{
+  font-weight: normal
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+$font-sizes: (
+  smaller: 0.9rem,
+  smallest: 0.85rem,
+  1: 1rem,
+  2: 1.25rem,
+  3: 1.5rem,
+  4: 1.75rem,
+  5: 2rem,
+  6: 2.25rem,
+  7: 2.5rem,
+  8: 2.75rem,
+  9: 3rem
+);
+
+@each $size, $value in $font-sizes {
+  .fs-#{$size} {
+    font-size: $value;
+  }
+}
+
+
+.top-0{
+  top: 0 !important;
+}
+
+// @each $color-label, $color-value in $polished-theme-colors{
+//   .bg-#{$color-label} {
+//     background-color: $color-value !important;
+//   }
+
+//   .bg-#{$color-label}-darker { 
+//     background-color: darken($color-value, 10%)
+//   }
+
+//   .bg-#{$color-label}-lighter {
+//     background-color: lighten($color-value, 10%)
+//   }
+
+//   .text-#{$color-label} {
+//     color: $color-value !important;
+//   }
+
+//   .text-#{$color-label}-lighter {
+//     color: lighten($color-value, 10%);
+//   }
+//   .text-#{$color-label}-darker {
+//     color: darken($color-value, 10%);
+//   }
+
+//   .border-#{$color-label} {
+//     border-color: $color-value !important;
+//   }
+
+//   .border-#{$color-label}-lighter {
+//     border-color: ligthen($color-value, 10%) !important;
+//   }
+
+//   .border-#{$color-label}-darker {
+//     border-color: darken($color-value, 10%) !important;
+//   }
+
+//   .badge-#{$color-label} {
+//     background-color: $color-value !important;
+//   }
+// }
+
+@each $color-label, $color-value in $theme-colors{
+  .bg-#{$color-label}-darker{
+    background-color: darken($color-value, 10%)
+  }
+
+  .bg-#{$color-label}-darkest{
+    background-color: darken($color-value, 20%)
+  }
+
+  .bg-#{$color-label}-lighter{
+    background-color: lighten($color-value, 10%)
+  }
+
+  .bg-#{$color-label}-lightest{
+    background-color: lighten($color-value, 20%)
+  }
+
+  .text-#{$color-label} {
+    color: $color-value
+  }
+
+  .text-#{$color-label}-lighter{
+    color: lighten($color-value, 10%)
+  }
+  .text-#{$color-label}-lightest{
+    color: lighten($color-value, 20%)
+  }
+
+  .text-#{$color-label}-darker{
+    color: darken($color-value, 10%)
+  }
+
+  .text-#{$color-label}-darkest{
+    color: darken($color-value, 20%)
+  }
+
+
+
+  .border-#{$color-label}-lighter{
+    border-color: lighten($color-value, 10%) !important;
+  }
+  .border-#{$color-label}-lightest{
+    border-color: lighten($color-value, 20%) !important;
+  }
+
+  .border-#{$color-label} {
+    border-color: $color-value !important;
+  }
+
+  .border-#{$color-label}-darker{
+    border-color: darken($color-value, 10%) !important;
+  }
+
+  .border-#{$color-label}-darkest{
+    border-color: darken($color-value, 20%) !important;
+  }
+}
+
+
+$opacities-level: (
+  25: 0.25,
+  50: 0.5,
+  75: 0.75,
+  100: 1
+);
+
+@each $opacity-level, $value in $opacities-level{
+  .o-#{$opacity-level} {
+    opacity: $value !important
+  }
+}
+
+.bg-warning-light { background-color: #FCE384 !important; }
+
+.border-warning-light{ border-color: #FCE384 !important; }
+
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+
+
+@-webkit-keyframes spin1 {
+  0% { -webkit-transform: rotate(0deg);}
+  100% { -webkit-transform: rotate(360deg);}
+  }
+  @-moz-keyframes spin1 {
+  0% { -moz-transform: rotate(0deg);}
+  100% { -moz-transform: rotate(360deg);}
+  }
+  @-o-keyframes spin1 {
+  0% { -o-transform: rotate(0deg);}
+  100% { -o-transform: rotate(360deg);}
+  }
+  @-ms-keyframes spin1 {
+  0% { -ms-transform: rotate(0deg);}
+  100% { -ms-transform: rotate(360deg);}
+  }
+  @keyframes spin1 {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+  } 
+  
+
+
+.spin{
+  animation-name: spin1;
+  display: block;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

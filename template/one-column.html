@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Polished</title>
+  <!-- <link rel="stylesheet" href="http://localhost:3000/css/bootstrap4/dist/css/bootstrap-custom.css?v=datetime"> -->
+  <link rel="stylesheet" href="../dist/polished.min.css">
+  <!-- <link rel="stylesheet" href="polaris-navbar.css"> -->
+  <link rel="stylesheet" href="../iconic/css/open-iconic-bootstrap.min.css">
+
+  <style>
+    .grid-highlight {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #5c6ac4;
+      border: 1px solid #202e78;
+      color: #fff;
+    }
+
+    hr {
+      margin: 6rem 0;
+    }
+
+    hr+.display-3,
+    hr+.display-2+.display-3 {
+      margin-bottom: 2rem;
+    }
+  </style>
+  <script type="text/javascript">
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js') + (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? ' svg' : ' no-svg');
+  </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand p-0">
+      <a class="navbar-brand col-xs-12 col-md-3 col-lg-2 mr-0" href="#">Polished</a>
+      <button class="btn btn-link d-block d-md-none" data-toggle="collapse" data-target="#sidebar-nav" role="button" >
+        <span class="oi oi-menu"></span>
+      </button>
+      
+      <input class="border-dark form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" aria-label="Search">
+      <div class="dropdown d-none d-md-block">
+        <img class="d-none d-lg-inline rounded-circle ml-1" width="32px" src="https://randomuser.me/api/portraits/lego/0.jpg" alt="MA"/>
+        <button class="btn btn-link btn-link-primary dropdown-toggle" id="navbar-dropdown" data-toggle="dropdown">
+          Muhammad Azamuddin
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" id="navbar-dropdown">
+          <a href="#" class="dropdown-item">Profile</a>
+          <a href="#" class="dropdown-item">Setting</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">Sign Out</a>
+        </div>
+      </div>
+    </nav>
+
+  <div class="container-fluid h-100 p-0" style="overflow: scroll;">
+    <div style="min-height: 100%" class="flex-row d-flex align-items-stretch m-0">
+        <div class="polished-sidebar bg-light col-12 col-md-3 col-lg-2 p-0 collapse d-md-inline" id="sidebar-nav">
+
+            <ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block">
+              <input class="border-dark form-control d-block d-md-none mb-4" type="text" placeholder="Search" aria-label="Search" />
+              <li><a href="home.html"><span class="oi oi-home"></span> Home</a></li>
+              <li><a href="dashboard.html"><span class="oi oi-dashboard"></span> Dashboard</a></li>
+              <li class=""><a href="charts.html"><span class="oi oi-pie-chart"></span> Charts</a></li>
+              <li><a href="widgets.html"><span class="oi oi-puzzle-piece"></span></span> Widget / UI</a></li>
+              <li><a href="forms.html"><span class="oi oi-browser"></span> Forms</a></li>
+              <li><a href="buttons.html"><span class="oi oi-plus"></span> Buttons</a></li>
+              <li><a href="table.html"><span class="oi oi-spreadsheet"></span> Table</a></li>
+              <li><a href="colors.html"><span class="oi oi-sun"></span> Colors</a></li>
+              <div class="pt-4">
+                  <a href="#" class="pl-3 fs-smallest fw-bold text-muted">LAYOUT OPTIONS </a> 
+                  <ul class="list-unstyled">
+                      <li class=""><a href="two-columns.html"><span class="oi oi-vertical-align-top"></span>Two Columns</a></li>
+                      <li class="active"><a href="one-column.html"><span class="oi oi-monitor"></span>One Column</a></li>
+                  </ul>
+              </div>
+              <div class="d-block d-md-none">
+                  <div class="dropdown-divider"></div>
+                  <li><a href="#"> Profile</a></li>
+                  <li><a href="#"> Setting</a></li>
+                  <li><a href="#"> Sign Out</a></li>
+              </div>
+            </ul>
+            <div class="pl-3 d-none d-md-block position-fixed" style="bottom: 0px">
+                <span class="oi oi-cog"></span> Setting
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-9 p-4">
+            <div class="row h-100">
+              <div class="col-md-12 pl-3 pt-2">
+                  <div class="pl-3">
+                      <h3>Page Title</h3>
+                      <div>
+                          <h4 class="text-muted fw-normal">
+                            Start creating your great application!
+                          </h4>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- <nav class="navbar-shopify navbar-expand">
+    <a class="navbar-brand col-sm-2 bg-dark" href="#">Polished</a>
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+      <ul class="navbar-nav">
+        <li class="col-lg-3 col-md-6 mb-2 col-sm-6"></li>
+        <form class="form-inline">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </ul>
+      <ul class="navbar-nav my-2 my-lg-0 col-4">
+        <li class="nav-item dropdown">
+          <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Muhammad Azamuddin
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item " href="#">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav> --> 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script>
+  var ctx = document.getElementById('chartjs-bar');
+  var data = {
+        labels: ["Jan", "Feb", "March", "April", "May", "June"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    }
+  var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: data,
+  });
+
+
+  var ctxLine = document.getElementById('chartjs-line')
+  var dataLine = {
+    labels: ["Jan", "Feb", "March", "April", "May", "June"],
+    datasets: [{
+      label: 'Purchase',
+      data: [20,10,40,50, 75,80],
+      borderColor: '#B5BCF3'
+    }, {
+      label: 'Add to Cart',
+      data: [40,30,54,60,60,99],
+      borderColor: '#47467A'
+    }]
+  }
+
+  var myLineChart = new Chart(ctxLine, {
+    type: 'line', 
+    data: dataLine
+  })
+
+  let ctxArea = document.getElementById('chartjs-line-area')
+
+  var dataArea = {
+    labels: ["Jan", "Feb", "March", "April", "May", "June"],
+    datasets: [{
+      label: 'Purchase',
+      data: [20,10,40,50, 75,80],
+      backgroundColor: '#24235C'
+    }, {
+      label: 'Add to Cart',
+      data: [40,30,54,60,60,99],
+      backgroundColor: '#47467A'
+    }]
+  }
+
+  var myAreaChart = new Chart(ctxArea, {
+    type: 'line',
+    data: dataArea
+  })
+
+  var ctxDoughnut = document.getElementById('chartjs-doughnut')
+  var myDoughnutChart = new Chart(ctxDoughnut, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [10,20,30],
+        backgroundColor: ['#24235C', '#47467A', 'indigo']
+      }],
+      labels: [ 'April', 'May', 'June']
+    }
+  })
+  </script>
+  
+</body>
+
+</html>

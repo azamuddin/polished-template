@@ -1,0 +1,92 @@
+/*!
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+ 
+
+//  @import "functions";
+//  @import "variables";
+//  @import "polished-variables";
+//  @import "mixins";
+//  @import "print";
+//  @import "reboot";
+//  @import "type";
+//  @import "images";
+//  @import "code";
+//  @import "grid";
+//  @import "tables";
+//  @import "forms";
+//  @import "buttons";
+//  @import "transitions";
+//  @import "dropdown";
+//  @import "button-group";
+//  @import "input-group";
+//  @import "custom-forms";
+//  // @import "nav";
+//  // @import "navbar";
+//  @import "card";
+//  @import "breadcrumb";
+//  @import "pagination";
+//  @import "badge";
+//  @import "banner";
+//  @import "footer-help";
+//  @import "jumbotron";
+//  @import "alert";
+//  @import "progress";
+//  @import "media";
+//  @import "list-group";
+//  @import "close";
+//  @import "modal";
+//  @import "tooltip";
+//  @import "popover";
+//  // @import "carousel";
+//  @import "utilities";
+//  @import "spinner";
+ @import "../polaris-scss/styles/foundation/colors.scss";
+ @import "../polaris-scss/styles/foundation";
+ @import "../polaris-scss/styles/shared";
+ @import "../polaris-scss/styles/components/Button.scss";
+ @import "../polaris-scss/styles/components/FormLayout.scss";
+ @import "../polaris-scss/styles/components/Icon.scss";
+ @import "../polaris-scss/styles/components/Checkbox.scss";
+ @import "../polaris-scss/styles/components/Choice.scss";
+ @import "../polaris-scss/styles/components/ChoiceList.scss";
+
+ 
+
+ @function polarisColor($hue, $value: base, $for-background: null) {
+  $fetched-color: map-get(map-get($color-palette-data, $hue), $value);
+
+  @if map-has-key($color-palette-data, $fetched-color) {
+    $fetched-color: map-get(map-get($color-palette-data, $fetched-color), $value);
+  }
+
+  @if $for-background != null {
+    $fetched-color: color-multiply($fetched-color, $for-background);
+  }
+
+  @if type-of($fetched-color) == color {
+    @return $fetched-color;
+  } @else {
+    @error 'Color `#{$hue} - #{$value}` not found. Available colors: #{available-names($color-palette-data)}';
+  }
+}
+
+
+ 
+ 
+ // beware bootstrap are here  
+ @import "polished-variables";
+
+ @import "mixins/_forms.scss";
+
+
+ @import "polished-buttons";
+ @import "polished-forms";
+ @import "polished-navbar";
+ @import "polished-sidebar";
+ @import "polished-wrapper";
+ @import "polished-global";

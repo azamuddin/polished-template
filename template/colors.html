@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Polished</title>
+  <!-- <link rel="stylesheet" href="http://localhost:3000/css/bootstrap4/dist/css/bootstrap-custom.css?v=datetime"> -->
+  <link rel="stylesheet" href="../dist/polished.min.css">
+  <!-- <link rel="stylesheet" href="polaris-navbar.css"> -->
+  <link rel="stylesheet" href="../iconic/css/open-iconic-bootstrap.min.css">
+
+  <style>
+    .grid-highlight {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #5c6ac4;
+      border: 1px solid #202e78;
+      color: #fff;
+    }
+
+    hr {
+      margin: 6rem 0;
+    }
+
+    hr+.display-3,
+    hr+.display-2+.display-3 {
+      margin-bottom: 2rem;
+    }
+  </style>
+  <script type="text/javascript">
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js') + (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? ' svg' : ' no-svg');
+  </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand p-0">
+      <a class="navbar-brand col-xs-12 col-md-3 col-lg-2 mr-0" href="#">Polished</a>
+      <button class="btn btn-link d-block d-md-none" data-toggle="collapse" data-target="#sidebar-nav" role="button" >
+        <span class="oi oi-menu"></span>
+      </button>
+      
+      <input class="border-dark form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" aria-label="Search">
+      <div class="dropdown d-none d-md-block">
+        <img class="d-none d-lg-inline rounded-circle ml-1" width="32px" src="https://randomuser.me/api/portraits/lego/0.jpg" alt="MA"/>
+        <button class="btn btn-link btn-link-primary dropdown-toggle" id="navbar-dropdown" data-toggle="dropdown">
+          Muhammad Azamuddin
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" id="navbar-dropdown">
+          <a href="#" class="dropdown-item">Profile</a>
+          <a href="#" class="dropdown-item">Setting</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">Sign Out</a>
+        </div>
+      </div>
+    </nav>
+
+  <div class="container-fluid h-100 p-0" style="overflow: scroll;">
+    <div style="min-height: 100%" class="flex-row d-flex align-items-stretch m-0">
+        <div class="polished-sidebar bg-light col-12 col-md-3 col-lg-2 p-0 collapse d-md-inline" id="sidebar-nav">
+
+            <ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block">
+              <input class="border-dark form-control d-block d-md-none mb-4" type="text" placeholder="Search" aria-label="Search" />
+              <li><a href="home.html"><span class="oi oi-home"></span> Home</a></li>
+              <li><a href="dashboard.html"><span class="oi oi-dashboard"></span> Dashboard</a></li>
+              <li class=""><a href="charts.html"><span class="oi oi-pie-chart"></span> Charts</a></li>
+              <li><a href="widgets.html"><span class="oi oi-puzzle-piece"></span></span> Widget / UI</a></li>
+              <li><a href="forms.html"><span class="oi oi-browser"></span> Forms</a></li>
+              <li><a href="buttons.html"><span class="oi oi-plus"></span> Buttons</a></li>
+              <li><a href="table.html"><span class="oi oi-spreadsheet"></span> Table</a></li>
+              <li class="active"><a href="colors.html"><span class="oi oi-sun"></span> Colors</a></li>
+              <div class="pt-4">
+                  <a href="#" class="pl-3 fs-smallest fw-bold text-muted">LAYOUT OPTIONS </a> 
+                  <ul class="list-unstyled">
+                      <li class=""><a href="two-columns.html"><span class="oi oi-vertical-align-top"></span>Two Columns</a></li>
+                      <li><a href="one-column.html"><span class="oi oi-monitor"></span>One Column</a></li>
+                  </ul>
+              </div>
+              <div class="d-block d-md-none">
+                  <div class="dropdown-divider"></div>
+                  <li><a href="#"> Profile</a></li>
+                  <li><a href="#"> Setting</a></li>
+                  <li><a href="#"> Sign Out</a></li>
+              </div>
+            </ul>
+            <div class="pl-3 d-none d-md-block position-fixed" style="bottom: 0px">
+                <span class="oi oi-cog"></span> Setting
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-9 p-4 mb-5">
+            <div class="row pl-3">
+                <div class="col-md-12 pl-3 pt-2">
+                    <h3>Colors</h3>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 pl-3 pt-2">
+                  <div class="pl-3">
+                    <h4>Bootstrap colors</h4>
+                      <div>
+                          <ul class="list-unstyled">
+                            <li class="bg-primary text-light pl-3">primary</li>
+                            <li class="bg-secondary text-dark pl-3">secondary</li>
+                            <li class="bg-success text-light pl-3">success</li>
+                            <li class="bg-warning text-light pl-3">warning</li>
+                            <li class="bg-info text-light pl-3">info</li>
+                            <li class="bg-light text-dark pl-3">light</li>
+                            <li class="bg-dark text-light pl-3">dark</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6 pl-3 pt-2">
+                    <div class="pl-3">
+                      <h4>Background colors classes</h4>
+                        <div>
+                            <ul class="list-unstyled">
+                              <li>Primary   Variants</li>
+                              <li class="bg-primary-lightest text-light pl-3">bg-primary-lightest</li>
+                              <li class="bg-primary-lighter text-light pl-3">bg-primary-lighter</li>
+                              <li class="bg-primary text-light pl-3">bg-primary</li>
+                              <li class="bg-primary-darker text-light pl-3">bg-primary-darker</li>
+                              <li class="bg-primary-darkest text-light pl-3">bg-primary-darkest</li>
+  
+                              <li>Secondary variants</li>
+                              <li class="bg-secondary-lightest text-light pl-3">bg-secondary-lightest</li>
+                              <li class="bg-secondary-lighter text-light pl-3">bg-secondary-lighter</li>
+                              <li class="bg-secondary text-light pl-3">bg-secondary</li>
+                              <li class="bg-secondary-darker text-light pl-3">bg-secondary-darker</li>
+                              <li class="bg-secondary-darkest text-light pl-3">bg-secondary-darkest</li>
+  
+                              <li>Success variants</li>
+                              <li class="bg-success-lightest text-light pl-3">bg-success-lightest</li>
+                              <li class="bg-success-lighter text-light pl-3">bg-success-lighter</li>
+                              <li class="bg-success text-light pl-3">bg-success</li>
+                              <li class="bg-success-darker text-light pl-3">bg-success-darker</li>
+                              <li class="bg-success-darkest text-light pl-3">bg-success-darkest</li>
+  
+                              <li>Warning variants</li>
+                              <li class="bg-warning-lightest text-light pl-3">bg-warning-lightest</li>
+                              <li class="bg-warning-lighter text-light pl-3">bg-warning-lighter</li>
+                              <li class="bg-warning text-light pl-3">bg-warning</li>
+                              <li class="bg-warning-darker text-light pl-3">bg-warning-darker</li>
+                              <li class="bg-warning-darkest text-light pl-3">bg-warning-darkest</li>
+  
+                              <li>Info variants</li>
+                              <li class="bg-info-lightest text-light pl-3">bg-info-lightest</li>
+                              <li class="bg-info-lighter text-light pl-3">bg-info-lighter</li>
+                              <li class="bg-info text-light pl-3">bg-info</li>
+                              <li class="bg-info-darker text-light pl-3">bg-info-darker</li>
+                              <li class="bg-info-darkest text-light pl-3">bg-info-darkest</li>
+  
+                              <li>Light variants</li>
+                              <li class="bg-light-lightest text-dark pl-3">bg-light-lightest</li>
+                              <li class="bg-light-lighter text-dark pl-3">bg-light-lighter</li>
+                              <li class="bg-light text-dark pl-3">bg-light</li>
+                              <li class="bg-light-darker text-dark pl-3">bg-light-darker</li>
+                              <li class="bg-light-darkest text-dark pl-3">bg-light-darkest</li>
+  
+                              <li>Dark variants</li>
+                              <li class="bg-dark-lightest text-light pl-3">bg-dark-lightest</li>
+                              <li class="bg-dark-lighter text-light pl-3">bg-dark-lighter</li>
+                              <li class="bg-dark text-light pl-3">bg-dark</li>
+                              <li class="bg-dark-darker text-light pl-3">bg-dark-darker</li>
+                              <li class="bg-dark-darkest text-light pl-3">bg-dark-darkest</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pl-3 pt-2">
+                    <div class="pl-3">
+                      <h4>Text colors classes</h4>
+                        <div>
+                            <ul class="list-unstyled">
+                              <li>Text Primary Variants</li>
+                              <li class="text-primary-lightest  pl-3">text primary-lightest</li>
+                              <li class="text-primary-lighter  pl-3">text primary-lighter</li>
+                              <li class="text-primary  pl-3">text primary</li>
+                              <li class="text-primary-darker  pl-3">text primary-darker</li>
+                              <li class="text-primary-darkest  pl-3">text primary-darkest</li>
+  
+                              <li>Text Seconary Variants</li>
+                              <li class="text-secondary-lightest  pl-3">text secondary-lightest</li>
+                              <li class="text-secondary-lighter  pl-3">text secondary-lighter</li>
+                              <li class="text-secondary  pl-3">text secondary</li>
+                              <li class="text-secondary-darker  pl-3">text secondary-darker</li>
+                              <li class="text-secondary-darkest  pl-3">text secondary-darkest</li>
+  
+                              <li>Text Success Variants</li>
+                              <li class="text-success-lightest  pl-3">text success-lightest</li>
+                              <li class="text-success-lighter  pl-3">text success-lighter</li>
+                              <li class="text-success  pl-3">text success</li>
+                              <li class="text-success-darker  pl-3">text success-darker</li>
+                              <li class="text-success-darkest  pl-3">text success-darkest</li>
+  
+                              <li>Text Warning Variants</li>
+                              <li class="text-warning-lightest  pl-3">text warning-lightest</li>
+                              <li class="text-warning-lighter  pl-3">text warning-lighter</li>
+                              <li class="text-warning  pl-3">text warning</li>
+                              <li class="text-warning-darker  pl-3">text warning-darker</li>
+                              <li class="text-warning-darkest  pl-3">text warning-darkest</li>
+  
+                              <li>Text Info Variants</li>
+                              <li class="text-info-lightest  pl-3">text info-lightest</li>
+                              <li class="text-info-lighter  pl-3">text info-lighter</li>
+                              <li class="text-info  pl-3">text info</li>
+                              <li class="text-info-darker  pl-3">text info-darker</li>
+                              <li class="text-info-darkest  pl-3">text info-darkest</li>
+  
+                              <li>Text Light Variants</li>
+                              <li class="text-light-lightest pl-3">text light-lightest</li>
+                              <li class="text-light-lighter pl-3">text light-lighter</li>
+                              <li class="text-light pl-3">text light</li>
+                              <li class="text-light-darker pl-3">text light-darker</li>
+                              <li class="text-light-darkest pl-3">text light-darkest</li>
+  
+                              <li>Text Dark Variants</li>
+                              <li class="text-dark-lightest  pl-3">text dark-lightest</li>
+                              <li class="text-dark-lighter  pl-3">text dark-lighter</li>
+                              <li class="text-dark  pl-3">text dark</li>
+                              <li class="text-dark-darker  pl-3">text dark-darker</li>
+                              <li class="text-dark-darkest  pl-3">text dark-darkest</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6 pl-3 pt-2">
+                    <div class="pl-3">
+                      <h4>Background colors classes</h4>
+                        <div>
+                            <ul class="list-unstyled">
+                              <li>Primary   Variants</li>
+                              <li class="border-primary-lightest border text-dark pl-3">border-primary-lightest</li>
+                              <li class="border-primary-lighter border text-dark pl-3">border-primary-lighter</li>
+                              <li class="border-primary border text-dark pl-3">border-primary</li>
+                              <li class="border-primary-darker border text-dark pl-3">border-primary-darker</li>
+                              <li class="border-primary-darkest border text-dark pl-3">border-primary-darkest</li>
+  
+                              <li>Secondary variants</li>
+                              <li class="border-secondary-lightest border text-dark pl-3">border-secondary-lightest</li>
+                              <li class="border-secondary-lighter border text-dark pl-3">border-secondary-lighter</li>
+                              <li class="border-secondary border text-dark pl-3">border-secondary</li>
+                              <li class="border-secondary-darker border text-dark pl-3">border-secondary-darker</li>
+                              <li class="border-secondary-darkest border text-dark pl-3">border-secondary-darkest</li>
+  
+                              <li>Success variants</li>
+                              <li class="border-success-lightest border text-dark pl-3">border-success-lightest</li>
+                              <li class="border-success-lighter border text-dark pl-3">border-success-lighter</li>
+                              <li class="border-success border text-dark pl-3">border-success</li>
+                              <li class="border-success-darker border text-dark pl-3">border-success-darker</li>
+                              <li class="border-success-darkest border text-dark pl-3">border-success-darkest</li>
+  
+                              <li>Warning variants</li>
+                              <li class="border-warning-lightest border text-dark pl-3">border-warning-lightest</li>
+                              <li class="border-warning-lighter border text-dark pl-3">border-warning-lighter</li>
+                              <li class="border-warning border text-dark pl-3">border-warning</li>
+                              <li class="border-warning-darker border text-dark pl-3">border-warning-darker</li>
+                              <li class="border-warning-darkest border text-dark pl-3">border-warning-darkest</li>
+  
+                              <li>Info variants</li>
+                              <li class="border-info-lightest border text-dark pl-3">border-info-lightest</li>
+                              <li class="border-info-lighter border text-dark pl-3">border-info-lighter</li>
+                              <li class="border-info border text-dark pl-3">border-info</li>
+                              <li class="border-info-darker border text-dark pl-3">border-info-darker</li>
+                              <li class="border-info-darkest border text-dark pl-3">border-info-darkest</li>
+  
+                              <li>Light variants</li>
+                              <li class="border-light-lightest border text-dark pl-3">border-light-lightest</li>
+                              <li class="border-light-lighter border text-dark pl-3">border-light-lighter</li>
+                              <li class="border-light border text-dark pl-3">border-light</li>
+                              <li class="border-light-darker border text-dark pl-3">border-light-darker</li>
+                              <li class="border-light-darkest border text-dark pl-3">border-light-darkest</li>
+  
+                              <li>Dark variants</li>
+                              <li class="border-dark-lightest border text-dark pl-3">border-dark-lightest</li>
+                              <li class="border-dark-lighter border text-dark pl-3">border-dark-lighter</li>
+                              <li class="border-dark border text-dark pl-3">border-dark</li>
+                              <li class="border-dark-darker border text-dark pl-3">border-dark-darker</li>
+                              <li class="border-dark-darkest border text-dark pl-3">border-dark-darkest</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+
+
+
+        </div>
+      </div>
+  </div>
+
+  <!-- <nav class="navbar-shopify navbar-expand">
+    <a class="navbar-brand col-sm-2 bg-dark" href="#">Polished</a>
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+      <ul class="navbar-nav">
+        <li class="col-lg-3 col-md-6 mb-2 col-sm-6"></li>
+        <form class="form-inline">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </ul>
+      <ul class="navbar-nav my-2 my-lg-0 col-4">
+        <li class="nav-item dropdown">
+          <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Muhammad Azamuddin
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item " href="#">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav> --> 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>

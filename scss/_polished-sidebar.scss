@@ -1,0 +1,54 @@
+.polished-sidebar {
+  background-color: polarisColor(sky, light);
+  border-right: 1px solid polarisColor(sky);
+  overflow: auto;
+
+  ul.polished-sidebar-menu{
+    list-style-type: none;
+    margin: 0px;
+
+    li{
+      padding-left: 1rem;
+      @extend .fs-smaller;
+      &.active{
+        background: polarisColor(indigo);
+        a{
+          color: polarisColor(sky, lighter);
+        }
+      }
+
+      &:hover{
+        background: polarisColor(indigo, light);
+        border: none;
+      }
+      
+      a{
+        width: 100%;
+        color: polarisColor(ink);
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        display: inline-block;
+        text-decoration: none;
+        span{
+          margin-right: 0.75rem;
+        }
+
+        &:active{
+          color: polarisColor(indigo, dark);
+        }
+      }
+    }
+
+    >input{
+      width: 95%;
+      margin: 0px auto;
+    }
+  }
+}
+
+
+@media (max-width:575px){
+  .polished-sidebar{
+    padding: 0;
+  }
+}
