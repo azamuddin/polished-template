@@ -1,0 +1,67 @@
+.dataTables_wrapper{
+  @extend .bg-white;
+  @extend .shadow-sm;
+  position: relative;
+
+  .dataTables_length{
+    @extend .pt-2;
+    @extend .pl-4;
+    float: left;
+
+    label{
+      select{
+        @extend .form-control-sm;
+        @extend select.form-control;
+        min-width: 45px;
+        @extend .pl-2;
+      }  
+    }
+  }
+
+  .dataTables_filter{
+    @extend .pt-2;
+    @extend .pr-4;
+    float: right;
+    label{
+      @extend .d-flex;
+      input{
+        @extend .ml-2;
+      }
+
+    }
+  }
+
+  input[type="search"] {
+    @extend .form-control-sm;
+    @extend .form-control;
+  }
+
+  table.dataTable{
+  }
+
+  .dataTables_info{
+    @extend .px-4;
+  }
+
+  thead th{
+    transition: border 0.2s linear;
+    outline: 0;
+  }
+
+  thead th.sorting{
+    cursor: pointer;
+  }
+
+  thead th[class^="sorting_"]{
+    font-weight: bold;
+    cursor: pointer;
+    color: polarisColor(indigo);
+  }
+  thead th[class^="sorting_asc"]{
+    border-top: 1px solid polarisColor(indigo);
+  }
+  thead th[class^="sorting_desc"]{
+    border-bottom: 2px solid polarisColor(indigo);
+  }
+
+}

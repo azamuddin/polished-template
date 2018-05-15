@@ -58,7 +58,13 @@ $radio-svg: "%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width
 }
 
 select.form-control {
+  appearance: none;
+  background: linear-gradient(to bottom, polarisColor(white), polarisColor(sky, lighter));
   &:not([size]):not([multiple]) {
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M13%208l-3-3-3%203h6zm-.1%204L10%2014.9%207.1%2012h5.8z%22%20fill%3D%22%23637381%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+    background-position: 99% 50%;
     height: $input-height;
   }
 
@@ -233,6 +239,7 @@ select.form-control-lg {
 
 .form-check-label {
   margin-bottom: 0; // Override default `<label>` bottom margin
+  margin-left: -18px;
 }
 
 .form-check-inline {
@@ -366,7 +373,7 @@ input[type="checkbox"] + label{
     background: linear-gradient(to bottom, polarisColor(white), polarisColor(sky, lighter));
     background-position: -2px -2px;
     border-radius: 3px;
-    margin-left: -18px;
+    
     margin-right: 5px;
     transition: border 0.2s cubic-bezier(.64,0,.35,1), background-size 0.1s cubic-bezier(.36,0,1,1);
   }
@@ -419,7 +426,7 @@ input[type="radio"] + label{
     content: "";
     width: 18px;
     margin-bottom: -3px;
-    margin-left: -18px;
+    
     height: 18px;
     background: linear-gradient(to bottom, polarisColor(white), polarisColor(sky, lighter));
     background-position: -2px -2px;
@@ -457,6 +464,17 @@ input[type="radio"]:active + label {
 
 input[type="radio"]:disabled + label {
   @extend .text-muted;
+
+  &::before{
+    border-color: polarisColor(sky);
+    border-width: 2px;
+    background-position: -3px -3px;
+  }
+}
+
+input[type="checkbox"]:disabled + label {
+  @extend .text-muted;
+  
   &::before{
     border-color: polarisColor(sky);
     border-width: 2px;

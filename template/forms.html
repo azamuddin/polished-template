@@ -132,6 +132,66 @@
                   </form>
                 </div>
               </div>
+
+
+              <div class="card mt-2">
+                <div class="card-header bg-white pb-1">
+                  <h5>General Elements</h5>
+                </div>
+                <div class="card-body">
+                  <label class="mt-4" for="">Input</label>
+                  <input placeholder="Type here..." type="text" class="form-control">
+                  <label class="mt-4" for="">Input Disabled</label>
+                  <input placeholder="Type here..." type="text" class="form-control" disabled>
+                  <label class="mt-4" for="">Textarea</label>
+                  <textarea class="form-control" name="" id="" cols="30" rows="10">Type here...</textarea>
+                  <label class="mt-4" for="">Textarea Disabled</label>
+                  <textarea  disabled class="form-control" name="" id="" cols="30" rows="10">Type here...</textarea>
+                  <label class="mt-4" for="">Checkbox</label>
+                  <br>
+                  <input type="checkbox" id="ch1"> <label for="ch1">Checkbox 1</label> 
+                  <br>
+                  <input type="checkbox" id="ch2"> <label for="ch2">Checkbox 2</label>
+                  <br>
+                  <input type="checkbox" id="ch3" disabled> <label for="ch3">Checkbox disabled</label>
+                  <br>
+                  <label class="mt-4" for="">Radio</label> <br>
+                  <input type="radio" name="rd1" id="rd1"> <label for="rd1">Radio 1</label> 
+                  <br>
+                  <input type="radio" name="rd1" id="rd2"> <label for="rd2">Radio 2</label>
+                  <br>
+                  <input type="radio" id="rd3" disabled> <label for="rd3">Radio disabled</label>
+
+                  <br>
+                  <label>Select</label>
+                  <select class="form-control" name="" id="">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 2</option>
+                  </select>
+                  <br>
+                  <label>Select disabled</label>
+                  <select disabled class="form-control" name="" id="">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 2</option>
+                  </select>
+                  <br>
+                  <label>Select multiple</label>
+                  <select multiple class="form-control" name="" id="">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 2</option>
+                  </select>
+                  <br>
+                  <label>Select multiple disabled</label>
+                  <select disabled multiple class="form-control" name="" id="">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 2</option>
+                  </select>
+                </div>
+              </div>
             </div>
 
             <div class="col-lg-6">
@@ -197,30 +257,69 @@
                       </form>
                 </div>
               </div>
-            </div>
 
-          </div>
-          <!-- end row -->
+              <div class="card mt-2">
+                  <div class="card-header bg-white pb-1">
+                    <h5>Input Sizes</h5>
+                  </div>
+                  <div class="card-body">
+                    <form action="">
+                      <div class="form-group">
+                        <input type="text" placeholder="form-control-lg" class="form-control form-control-lg">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="form-control-sm">
+                      </div>
+                    </form>
+                  </div>
+                </div>
 
-          <!-- start row -->
-          <div class="row pl-3 mb-4 mt-2">
-            <div class="col-lg-6">
-              <div class="card">
-                <div class="card-header bg-white pb-1">
-                  <h5>Input Sizes</h5>
+              <div class="card mt-2">
+                <div class="card-header pb-1 bg-white">
+                  <h5>Input addons</h5>
                 </div>
                 <div class="card-body">
-                  <form action="">
-                    <div class="form-group">
-                      <input type="text" placeholder="form-control-lg" class="form-control form-control-lg">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="form-control">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control form-control-sm" placeholder="form-control-sm">
-                    </div>
-                  </form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-primary text-white" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <span class="input-group-text bg-danger text-white" id="basic-addon2">@example.com</span>
+                        </div>
+                      </div>
+                      
+                      <label for="basic-url">Your vanity URL</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-info text-white" id="basic-addon3">https://example.com/users/</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                      </div>
+                      
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-primary-lighter text-white">$</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append">
+                          <span class="input-group-text bg-primary-lighter text-white">.00</span>
+                        </div>
+                      </div>
+                      
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-secondary">With textarea</span>
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
                 </div>
               </div>
             </div>
@@ -228,7 +327,7 @@
           <!-- end row -->
 
           <!-- start row -->
-          <div class="row pl-3 my-4">
+          <div class="row pl-3 my-4 mb-5">
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header bg-white pb-1">

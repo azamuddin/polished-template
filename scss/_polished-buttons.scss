@@ -78,6 +78,7 @@ fieldset:disabled a.btn {
     @if($color == "danger"){
       @extend .Polaris-Button--destructive;
       border-color: polarisColor(red);
+      @include button-filled(polarisColor(red), polarisColor(red, dark));
       &:disabled{
         border-color: lighten(polarisColor(red), 10%);
       }
@@ -85,6 +86,7 @@ fieldset:disabled a.btn {
 
     @if($color == "warning"){
       border-color: polarisColor(yellow);
+      @include button-filled(polarisColor(yellow), polarisColor(yellow, dark));
       &:disabled{
         border-color: lighten(polarisColor(yellow), 10%);
       }
@@ -92,6 +94,7 @@ fieldset:disabled a.btn {
 
     @if($color == "success"){
       border-color: polarisColor(green);
+      @include button-filled(polarisColor(green), polarisColor(green, dark));
       &:disabled{
         border-color: lighten(polarisColor(green), 10%);
       }
@@ -99,6 +102,7 @@ fieldset:disabled a.btn {
 
     @if($color == "info"){
       border-color: polarisColor(blue);
+      @include button-filled(polarisColor(blue), polarisColor(blue, dark));
       &:disabled{
         border-color: lighten(polarisColor(blue), 10%);
       }
@@ -106,12 +110,14 @@ fieldset:disabled a.btn {
 
     @if($color == "dark"){
       border-color: polarisColor(ink);
+      @include button-filled(polarisColor(ink), polarisColor(ink, base));
       &:disabled{
         border-color: lighten(polarisColor(ink), 10%);
       }
     }
     @if($color == "light"){
       border-color: polarisColor(sky);
+      @include button-filled(polarisColor(sky), polarisColor(sky, dark));
       &:disabled{
         border-color: lighten(polarisColor(sky), 10%);
       }

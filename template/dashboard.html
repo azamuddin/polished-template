@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Polished</title>
+  <!-- <link rel="stylesheet" href="http://localhost:3000/css/bootstrap4/dist/css/bootstrap-custom.css?v=datetime"> -->
+  <link rel="stylesheet" href="../dist/polished.min.css">
+  <!-- <link rel="stylesheet" href="polaris-navbar.css"> -->
+  <link rel="stylesheet" href="../iconic/css/open-iconic-bootstrap.min.css">
+
+  <style>
+    .grid-highlight {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #5c6ac4;
+      border: 1px solid #202e78;
+      color: #fff;
+    }
+
+    hr {
+      margin: 6rem 0;
+    }
+
+    hr+.display-3,
+    hr+.display-2+.display-3 {
+      margin-bottom: 2rem;
+    }
+  </style>
+  <script type="text/javascript">
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js') + (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? ' svg' : ' no-svg');
+  </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand p-0">
+      <a class="navbar-brand col-xs-12 col-md-3 col-lg-2 mr-0" href="#">Polished</a>
+      <button class="btn btn-link d-block d-md-none" data-toggle="collapse" data-target="#sidebar-nav" role="button" >
+        <span class="oi oi-menu"></span>
+      </button>
+      
+      <input class="border-dark form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" aria-label="Search">
+      <div class="dropdown d-none d-md-block">
+        <img class="d-none d-lg-inline rounded-circle ml-1" width="32px" src="https://randomuser.me/api/portraits/lego/0.jpg" alt="MA"/>
+        <button class="btn btn-link btn-link-primary dropdown-toggle" id="navbar-dropdown" data-toggle="dropdown">
+          Muhammad Azamuddin
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" id="navbar-dropdown">
+          <a href="#" class="dropdown-item">Profile</a>
+          <a href="#" class="dropdown-item">Setting</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">Sign Out</a>
+        </div>
+      </div>
+    </nav>
+
+  <div class="container-fluid h-100 p-0" style="overflow: scroll;">
+    <div style="min-height: 100%" class="flex-row d-flex align-items-stretch m-0">
+        <div class="polished-sidebar bg-light col-12 col-md-3 col-lg-2 p-0 collapse d-md-inline" id="sidebar-nav">
+
+            <ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block">
+              <input class="border-dark form-control d-block d-md-none mb-4" type="text" placeholder="Search" aria-label="Search" />
+              <li><a href="home.html"><span class="oi oi-home"></span> Home</a></li>
+              <li class="active"><a href="dashboard.html"><span class="oi oi-dashboard"></span> Dashboard</a></li>
+              <li class=""><a href="charts.html"><span class="oi oi-pie-chart"></span> Charts</a></li>
+              <li><a href="widgets.html"><span class="oi oi-puzzle-piece"></span></span> Widget / UI</a></li>
+              <li><a href="forms.html"><span class="oi oi-browser"></span> Forms</a></li>
+              <li><a href="buttons.html"><span class="oi oi-plus"></span> Buttons</a></li>
+              <li><a href="table.html"><span class="oi oi-spreadsheet"></span> Table</a></li>
+              <li><a href="colors.html"><span class="oi oi-sun"></span> Colors</a></li>
+              <div class="pt-4">
+                  <a href="#" class="pl-3 fs-smallest fw-bold text-muted">LAYOUT OPTIONS </a> 
+                  <ul class="list-unstyled">
+                      <li class=""><a href="two-columns.html"><span class="oi oi-vertical-align-top"></span>Two Columns</a></li>
+                      <li><a href="one-column.html"><span class="oi oi-monitor"></span>One Column</a></li>
+                  </ul>
+              </div>
+              <div class="d-block d-md-none">
+                  <div class="dropdown-divider"></div>
+                  <li><a href="#"> Profile</a></li>
+                  <li><a href="#"> Setting</a></li>
+                  <li><a href="#"> Sign Out</a></li>
+              </div>
+            </ul>
+            <div class="pl-3 d-none d-md-block position-fixed" style="bottom: 0px">
+                <span class="oi oi-cog"></span> Setting
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-9 p-4">
+            <div class="row ">
+              <div class="col-md-12 pl-3 pt-2">
+                  <div class="pl-3">
+                      <h3>Dashboard</h3>
+                  </div>
+              </div>
+            </div>
+
+            <!-- start info box -->
+            <div class="row ">
+              <div class="col-md-12 pl-3 pt-2">
+                  <div class="row pl-3">
+
+                    <div class="col-md-6 col-lg-3 col-12 mb-2 col-sm-6">
+                      <div class="media shadow-sm p-0 bg-white rounded text-primary ">
+                        <span class="oi top-0 rounded-left bg-primary text-light h-100 p-4 oi-badge fs-5"></span>
+                        <div class="media-body p-2">
+                          <h6 class="media-title m-0">Best Sales / Day</h6>
+                          <div class="media-text">
+                            <h3>3980</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 col-12 mb-2 col-sm-6">
+                        <div class="media shadow-sm p-0 bg-success-lighter text-light rounded">
+                          <span class="oi top-0 rounded-left bg-white text-success h-100 p-4 oi-people fs-5"></span>
+                          <div class="media-body p-2">
+                            <h6 class="media-title m-0">Store Visits</h6>
+                            <div class="media-text">
+                              <h3>58493</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="col-md-6 col-lg-3 col-12 mb-2 col-sm-6">
+                      <div class="media shadow-sm p-0 bg-warning-lighter text-primary-darker rounded ">
+                        <span class="oi top-0 rounded-left bg-white text-warning h-100 p-4 oi-cart fs-5"></span>
+                        <div class="media-body p-2">
+                          <h6 class="media-title m-0">Store Visits</h6>
+                          <div class="media-text">
+                            <h3>58493</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-12 mb-2 col-sm-6">
+                      <div class="media shadow-sm p-0 bg-info-lighter text-light rounded ">
+                        <span class="oi top-0 rounded-left bg-white text-info h-100 p-4 oi-tag fs-5"></span>
+                        <div class="media-body p-2">
+                          <h6 class="media-title m-0">Total Products</h6>
+                          <div class="media-text">
+                            <h3>23</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- end info box -->
+
+            <!-- start second boxes -->
+            <div class="row pl-3 mt-4 mb-5">
+              <div class="col-md-12">
+                  <div class="card shadow-sm border-0">
+                      <div class="card-header p-0 bg-white">
+                        <h6 class="border-bottom p-2"> Monthly recap</h6>
+                        <div class="row pb-1">
+                          <div class="col-md-3">
+                            <div class="text-center">
+                                <div class="fs-smaller">
+                                    <span class="oi oi-caret-top fs-smallest mr-1 text-success"></span>30%</div>
+                                <div class="fw-bold">$45,084.00</div>
+                                <div>Total Revenue</div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="text-center">
+                                  <div class="fs-smaller">
+                                      <span class="oi oi-caret-left fs-smallest mr-1 text-dark"></span>0%</div>
+                                  <div class="fw-bold">$20,493.00</div>
+                                  <div>Total Cost</div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="text-center">
+                                  <div class="fs-smaller">
+                                      <span class="oi oi-caret-top  fs-smallest mr-1 text-success"></span>45%</div>
+                                  <div class="fw-bold">14,398</div>
+                                  <div>Total Sales</div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="text-center">
+                                  <div class="fs-smaller">
+                                      <span class="oi oi-caret-bottom fs-smallest mr-1 text-danger"></span>3%</div>
+                                  <div class="fw-bold">$24,591.00</div>
+                                  <div>Total Profits</div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <h6>Add to carts <small>(73%)</small></h6>
+                              <div class="progress">
+                                <div style="width: 73%" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <br>
+                              <h6>Completed purchase <small>(32%)</small></h6>
+                              <div class="progress">
+                                <div style="width: 32%" class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <br>
+                              <h6>Abandon carts <small>(68%)</small></h6>
+                              <div class="progress">
+                                <div style="width: 68%" class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <br>
+                              <h6>Wishlist <small>(38%)</small></h6>
+                              <div class="progress">
+                                <div style="width:38%" class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <canvas id="sales"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <!-- end second boxes -->
+
+            <!-- start third box -->
+            <div class="row pl-3 mb-5">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header bg-white pb-1">
+                    <h6>Latest Order</h6>
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <table class="table mb-0">
+                      <thead>
+                        <tr>
+                          <th>Order id</th>
+                          <th>Item</th>
+                          <th>Status</th>
+                          <th class="text-right">Value</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>#42248</td>
+                          <td>Shoe X</td>
+                          <td><div class="badge badge-success text-light">delivered</div></td>
+                          <td class="text-right">$54</td>
+                        </tr>
+                        <tr>
+                          <td>#42247</td>
+                          <td>Shoe ABC</td>
+                          <td><div class="badge badge-warning text-dark">on process</div></td>
+                          <td class="text-right">$35</td>
+                        </tr>
+                        <tr>
+                          <td>#42246</td>
+                          <td>Bag DEF</td>
+                          <td><div class="badge badge-danger text-white">canceled</div></td>
+                          <td class="text-right">$22</td>
+                        </tr>
+                        <tr>
+                          <td>#42245</td>
+                          <td>Gaming Pad</td>
+                          <td><div class="badge badge-success text-light">delivered</div></td>
+                          <td class="text-right">$12</td>
+                        </tr>
+                        <tr>
+                          <td>#42244</td>
+                          <td>Keyboard ABC</td>
+                          <td><div class="badge badge-dark text-light">refunded</div></td>
+                          <td class="text-right">$45</td>
+                        </tr>
+                        <tr>
+                          <td>#42243</td>
+                          <td>Shoe DFS</td>
+                          <td><div class="badge badge-success text-light">delivered</div></td>
+                          <td class="text-right">$23</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between bg-white">
+                    <button class="btn btn-primary">Place new order</button>
+                    <a class="btn btn-link text-primary">view all orders</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header bg-white pb-1">
+                    <h6>Top Sales by Category</h6>
+                  </div>
+                  <div class="card-body px-0">
+                    <canvas id="top-sales-by-category"></canvas>
+                    <ul class="list-group list-group-flush mt-4">
+                      <li class="list-group-item">Gaming <span class="float-right fs-smaller"> <span class="oi oi-caret-top text-success"></span> 22%</span> </li>
+                      <li class="list-group-item">Sports  <span class="float-right fs-smaller"> <span class="oi oi-caret-bottom text-danger"></span> 1%</span> </li>
+                      <li class="list-group-item">Bags <span class="float-right fs-smaller"> <span class="oi oi-caret-top text-success"></span> 14%</span> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end third box -->
+
+
+        </div>
+      </div>
+  </div>
+
+  <!-- <nav class="navbar-shopify navbar-expand">
+    <a class="navbar-brand col-sm-2 bg-dark" href="#">Polished</a>
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+      <ul class="navbar-nav">
+        <li class="col-lg-3 col-md-6 mb-2 col-sm-6"></li>
+        <form class="form-inline">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </ul>
+      <ul class="navbar-nav my-2 my-lg-0 col-4">
+        <li class="nav-item dropdown">
+          <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Muhammad Azamuddin
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item " href="#">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav> --> 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script>
+
+
+  let ctxArea = document.getElementById('sales')
+
+  var dataArea = {
+    labels: ["Jan", "Feb", "March", "April", "May", "June"],
+    datasets: [{
+      label: 'Sales',
+      data: [20,10,40,50, 75,80],
+      backgroundColor: '#6CCC64'
+    }, {
+      label: 'Add to Cart',
+      data: [40,30,54,60,60,99],
+      backgroundColor: '#FDD638'
+    }]
+  }
+
+  var myAreaChart = new Chart(ctxArea, {
+    type: 'line',
+    data: dataArea
+  })
+
+  var ctxDoughnut = document.getElementById('top-sales-by-category')
+  var myDoughnutChart = new Chart(ctxDoughnut, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [10,20,30,32,54],
+        backgroundColor: ['indigo', 'blue', 'green', 'tan', 'lightgreen']
+      }],
+      labels: [ 'Footwear', 'Menswear', 'Bags', 'Sports', 'Gaming']
+    }
+  })
+
+
+  </script>
+  
+</body>
+
+</html>

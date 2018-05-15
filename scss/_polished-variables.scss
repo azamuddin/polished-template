@@ -4,6 +4,16 @@ $indigo-darker: #06064A;
 $indigo-dark: #21245E;
 $indigo: #45477C;
 
+$link-color: polarisColor(sky, lighter);
+$input-border-radius: 2px;
+$input-disabled-bg: polarisColor(sky, lighter) ;
+
+$border-radius:               .125rem;
+$border-radius-lg:            .15rem;
+$border-radius-sm:            .1rem;
+$table-bg: white;
+$table-hover-bg: polarisColor(indigo, light);
+
 $theme-colors: (
   "primary": polarisColor(indigo),
   "secondary": polarisColor(sky, lighter),
@@ -18,7 +28,8 @@ $theme-colors: (
   "blue": polarisColor(blue),
   "purple": polarisColor(purple),
   "teal": polarisColor(teal),
-  "orange": polarisColor(orange)
+  "orange": polarisColor(orange),
+  "white": #fff,
 );
 
 
