@@ -40,14 +40,14 @@
 <body>
 
     <nav class="navbar navbar-expand p-0">
-      <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0" href="#">Polished</a>
+      <a class="navbar-brand col-xs-12 col-md-3 col-lg-2 mr-0" href="#">Polished</a>
       <button class="btn btn-link d-block d-md-none" data-toggle="collapse" data-target="#sidebar-nav" role="button" >
         <span class="oi oi-menu"></span>
       </button>
       
       <input class="border-dark form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" aria-label="Search">
       <div class="dropdown d-none d-md-block">
-        <img class="d-none d-lg-inline rounded-circle ml-1" width="32px" src="https://randomuser.me/api/portraits/lego/0.jpg" alt="MA"/>
+        <img class="d-none d-lg-inline rounded-circle ml-1" width="32px" src="assets/azamuddin.jpg" alt="MA"/>
         <button class="btn btn-link btn-link-primary dropdown-toggle" id="navbar-dropdown" data-toggle="dropdown">
           Muhammad Azamuddin
         </button>
@@ -60,31 +60,155 @@
       </div>
     </nav>
 
-  <div class="container-fluid p-0 h-100">
-      <div class="row no-gutters m-0 h-100">
-          <div class="col-md-3 col-lg-2 col-xs-12 p-0">
-            <div class="polished-sidebar h-100">     
+  <div class="container-fluid h-100 p-0" style="overflow: scroll;">
+    <div style="min-height: 100%" class="flex-row d-flex align-items-stretch m-0">
+        <div class="polished-sidebar bg-light col-12 col-md-3 col-lg-2 p-0 collapse d-md-inline" id="sidebar-nav">
 
-              <ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block collapse" id="sidebar-nav">
-                <input class="border-dark form-control d-block d-md-none mb-4" type="text" placeholder="Search" aria-label="Search">
-                <li><a href="#"><span class="oi oi-home"></span> Home</a></li>
-                <li><a href="dashboard.html"><span class="oi oi-dashboard"></span> Dashboard</a></li>
+            <ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block">
+              <input class="border-dark form-control d-block d-md-none mb-4" type="text" placeholder="Search" aria-label="Search" />
+              <li class="active"><a href="home.html"><span class="oi oi-home"></span> Home</a></li>
+              <li><a href="dashboard.html"><span class="oi oi-dashboard"></span> Dashboard</a></li>
               <li><a href="charts.html"><span class="oi oi-pie-chart"></span> Charts</a></li>
               <li><a href="widgets.html"><span class="oi oi-puzzle-piece"></span></span> Widget / UI</a></li>
               <li><a href="forms.html"><span class="oi oi-browser"></span> Forms</a></li>
               <li><a href="buttons.html"><span class="oi oi-plus"></span> Buttons</a></li>
               <li><a href="table.html"><span class="oi oi-spreadsheet"></span> Table</a></li>
               <li><a href="colors.html"><span class="oi oi-sun"></span> Colors</a></li>
-                <div class="d-block d-md-none">
-                    <div class="dropdown-divider"></div>
-                    <li><a href="#"> Profile</a></li>
-                    <li><a href="#"> Setting</a></li>
-                    <li><a href="#"> Sign Out</a></li>
+              <div class="pt-4">
+                  <a href="#" class="pl-3 fs-smallest fw-bold text-muted">LAYOUT OPTIONS </a> 
+                  <ul class="list-unstyled">
+                      <li class=""><a href="two-columns.html"><span class="oi oi-vertical-align-top"></span>Two Columns</a></li>
+                      <li class=""><a href="one-column.html"><span class="oi oi-monitor"></span>One Column</a></li>
+                  </ul>
+              </div>
+              <div class="d-block d-md-none">
+                  <div class="dropdown-divider"></div>
+                  <li><a href="#"> Profile</a></li>
+                  <li><a href="#"> Setting</a></li>
+                  <li><a href="#"> Sign Out</a></li>
+              </div>
+            </ul>
+            <div class="pl-3 d-none d-md-block position-fixed" style="bottom: 0px">
+                <span class="oi oi-cog"></span> Setting
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-9">
+
+          <div class="row">
+
+            <div class="col-lg-7 pl-3 pt-2 pb-2 pr-2" style="background-image: url(assets/main.png) !important; background-size: 80% ; background-repeat: no-repeat; background-position: 15rem -5rem">
+             <div class="greeting mt-4 pl-4">
+               <h3>
+                Good Evening, Manda
+               </h3>
+               <h4 class="text-muted w-50 fw-normal">
+                 Here's what's happening with your store today.
+               </h4>
+             </div>
+
+             <div class="row store-insight pl-4">
+              <div class="col-5">
+                <div>Today's Sales</div>   
+                <h4 class="fw-normal">
+                  $8900.00
+                </h4>
+              </div>
+              <div class="col-5">
+                <div>Today's Visits</div>   
+                <h4 class="fw-normal">
+                  37.849
+                </h4>
+              </div>
+               
+             </div>
+
+             <div class="row mt-4">
+               <div class="col-12">
+                  <div class="card border-warning-light m-4 p-2 bg-warning-light shadow-sm">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-warning-light">
+                          <span class="d-block mb-2 fw-bold"> 10 tips to increase sales!.</span>
+                          <p>
+                            Here are some basic steps you can take to improve your sales performance, reduce your cost of selling, and ensure your great business.
+                          </p>
+                          <a href="#" class="btn btn-link text-primary pl-0">Learn more</a>
+                        </li>
+                        <li class="list-group-item bg-warning-light">
+                          <span class="d-block mb-2 fw-bold"> Get more customers!</span>
+                          <p>
+                            Learn how to get more customers with this step-by-step guide from expert marketers!
+                          </p>
+                          <a href="#" class="btn btn-link text-primary pl-0">Learn more</a>
+                        </li>
+                      </ul>
+                    </div>
+               </div>
+             </div>
+            </div>
+
+
+            <div class="col-lg-5 pt-2 pb-2 bg-white shadow-sm border-left border-white">
+
+              <div class="row p-4">
+                <div class="col-md-6 mb-1 mb-sm-0">
+                  <select class="form-control" name="" id="">
+                    <option value="1">All Channel</option>
+                    <option value="2">Front store</option>
+                    <option value="3">Mobile</option>
+                  </select>
                 </div>
+                <div class="col-md-6">
+                  <select class="form-control" name="" id="">
+                    <option value="1">Today</option>
+                    <option value="2">Last 7 Days</option>
+                    <option value="3">This Month</option>
+                  </select>
+                </div>
+              </div>
+              <hr class="m-0">
+
+              <div class="row p-4">
+                <div class="col-md-6">
+                    <small class="fw-bold">TOTAL SALES</small>
+                    <h4 class="fw-normal">$33,400.00</h4>
+                </div>
+                <div class="col-md-6 text-right text-muted">
+                    <span class="d-block">Jun 1</span>
+                    <span>239 orders</span>
+                </div>
+              </div>
+
+              <small class="fw-bold mx-4">TOTAL SALES BY CHANNEL</small>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row">
+                      <div class="col-md-6">
+                        <span style="text-decoration: none !important">Front Store</span>
+                        <h5 class="mt-2">$44,430.00</h5>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <a href="#" class="btn btn-link text-right d-block p-0">View dashboard</a>
+                        <span class="text-muted">445,342 orders</span>
+                      </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <span style="text-decoration: none !important">Mobile Store</span>
+                          <h5 class="mt-2">$3,932.00</h5>
+                        </div>
+                        <div class="col-md-6 text-right">
+                          <a href="#" class="btn btn-link text-right d-block p-0">View dashboard</a>
+                          <span class="text-muted">32,322 orders</span>
+                        </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
+      </div>
   </div>
 
   <!-- <nav class="navbar-shopify navbar-expand">
