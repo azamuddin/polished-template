@@ -14,6 +14,11 @@ $border-radius-sm:            .1rem;
 $table-bg: white;
 $table-hover-bg: polarisColor(indigo, light);
 
+$link-color:                polarisColor(indigo);
+$link-decoration:           none;
+$link-hover-color:          darken($link-color, 15%);
+$link-hover-decoration:     none;
+
 $theme-colors: (
   "primary": polarisColor(indigo),
   "secondary": polarisColor(sky, lighter),
