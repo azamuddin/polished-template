@@ -22,7 +22,6 @@
   align-items: center;
   justify-content: space-between; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
-  // background-color: $shopify-dark;
   background-color: polarisColor(indigo, dark);
   border: 0;
 
@@ -30,8 +29,8 @@
     input {
       padding: $spacer / 2;
       color: #ced3d8;
-      border-color: polarisColor(indigo, lighter);
-      background-color: polarisColor(indigo, lighter);
+      // border-color: polarisColor(indigo, lighter);
+      // background-color: polarisColor(indigo, lighter);
       &::placeholder {
         // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
         opacity: 1;
@@ -41,7 +40,6 @@
   }
 
   input {
-    background:$indigo;
     border: 0;
 
     &::placeholder{
@@ -129,7 +127,7 @@
   font-size: $navbar-brand-font-size;
   line-height: inherit;
   white-space: nowrap;
-  background-color: darken(polarisColor(indigo, dark), 10%);
+  // background-color: darken(polarisColor(indigo, dark), 10%);
 
   +button{
     margin-left: 1rem;
