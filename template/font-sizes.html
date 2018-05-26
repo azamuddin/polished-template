@@ -14,6 +14,8 @@
   <!-- <link rel="stylesheet" href="polaris-navbar.css"> -->
   <link rel="stylesheet" href="../iconic/css/open-iconic-bootstrap.min.css">
 
+  <link rel="icon" href="assets/polished-logo-small.png">
+
   <style>
     .grid-highlight {
       padding-top: 1rem;
@@ -57,15 +59,13 @@
 
 <body>
 
-    <nav class="navbar bg-primary-dark navbar-expand p-0">
-      <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0" href="index.html">
-        <img src="assets/polished-logo-small.png" alt="logo" width="42px">
-        Polished</a>
+    <nav class="navbar navbar-expand p-0">
+     <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0" href="index.html">         <img src="assets/polished-logo-small.png" alt="logo" width="42px">         Polished</a>
       <button class="btn btn-link d-block d-md-none" data-toggle="collapse" data-target="#sidebar-nav" role="button" >
         <span class="oi oi-menu"></span>
       </button>
       
-      <input class="border-dark bg-primary-darkest form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" aria-label="Search">
+      <input class="border-dark form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" aria-label="Search">
       <div class="dropdown d-none d-md-block">
         <img class="d-none d-lg-inline rounded-circle ml-1" width="32px" src="assets/azamuddin.jpg" alt="MA"/>
         <button class="btn btn-link btn-link-primary dropdown-toggle" id="navbar-dropdown" data-toggle="dropdown">
@@ -86,20 +86,20 @@
 
             <ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block">
               <input class="border-dark form-control d-block d-md-none mb-4" type="text" placeholder="Search" aria-label="Search" />
-              <li class="active"><a href="home.html"><span class="oi oi-home"></span> Home</a></li>
+              <li><a href="home.html"><span class="oi oi-home"></span> Home</a></li>
               <li><a href="dashboard.html"><span class="oi oi-dashboard"></span> Dashboard</a></li>
-              <li><a href="charts.html"><span class="oi oi-pie-chart"></span> Charts</a></li>
+              <li class=""><a href="charts.html"><span class="oi oi-pie-chart"></span> Charts</a></li>
               <li><a href="widgets.html"><span class="oi oi-puzzle-piece"></span></span> Widget / UI</a></li>
               <li><a href="forms.html"><span class="oi oi-browser"></span> Forms</a></li>
               <li><a href="buttons.html"><span class="oi oi-plus"></span> Buttons</a></li>
               <li><a href="table.html"><span class="oi oi-spreadsheet"></span> Table</a></li>
-              <li><a href="colors.html"><span class="oi oi-sun"></span> Colors</a></li>
-              <li><a href="font-sizes.html"><span class="oi oi-text"></span> Font Sizes</a></li>
+              <li class=""><a href="colors.html"><span class="oi oi-sun"></span> Colors</a></li>
+              <li class="active"><a href="font-sizes.html"><span class="oi oi-text"></span> Font Sizes</a></li>
               <div class="pt-4">
                   <a href="#" class="pl-3 fs-smallest fw-bold text-muted">LAYOUT OPTIONS </a> 
                   <ul class="list-unstyled">
                       <li class=""><a href="two-columns.html"><span class="oi oi-vertical-align-top"></span>Two Columns</a></li>
-                      <li class=""><a href="one-column.html"><span class="oi oi-monitor"></span>One Column</a></li>
+                      <li><a href="one-column.html"><span class="oi oi-monitor"></span>One Column</a></li>
                   </ul>
               </div>
               <div class="d-block d-md-none">
@@ -113,121 +113,44 @@
                 <span class="oi oi-cog"></span> Setting
             </div>
         </div>
-        <div class="col-lg-10 col-md-9">
+        <div class="col-lg-10 col-md-9 p-4 mb-5">
+            <div class="row pl-3">
+                <div class="col-md-12 pl-3 pt-2">
+                    <h3>Font Sizes</h3>
+                </div>
+            </div>
 
-          <div class="row">
-
-            <div class="col-lg-7 pl-3 pt-2 pb-2 pr-2" style="background-image: url(assets/main.png) !important; background-size: 80% ; background-repeat: no-repeat; background-position: 15rem -5rem">
-             <div class="greeting mt-4 pl-4">
-               <h3>
-                Good Evening, Manda
-               </h3>
-               <h4 class="text-muted w-50 fw-normal">
-                 Here's what's happening with your store today.
-               </h4>
-             </div>
-
-             <div class="row store-insight pl-4">
-              <div class="col-5">
-                <div>Today's Sales</div>   
-                <h4 class="fw-normal">
-                  $8900.00
-                </h4>
+            <div class="row pl-3">
+              <div class="col-md-12 pl-3">
+                <h3>Bootstrap display classes</h3>
+                <div class="display-1">.display-1</div>
+                <div class="display-2">.display-2</div>
+                <div class="display-3">.display-3</div>
+                <div class="display-4">.display-4</div>
               </div>
-              <div class="col-5">
-                <div>Today's Visits</div>   
-                <h4 class="fw-normal">
-                  37849
-                </h4>
-              </div>
-               
-             </div>
+            </div>
+            <br>
+            <br>
 
-             <div class="row mt-4">
-               <div class="col-12">
-                  <div class="card border-warning-light m-4 p-2 bg-warning-light shadow-sm">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-warning-light">
-                          <span class="d-block mb-2 fw-bold"> 10 tips to increase sales!.</span>
-                          <p>
-                            Here are some basic steps you can take to improve your sales performance, reduce your cost of selling, and ensure your great business.
-                          </p>
-                          <a href="#" class="btn btn-link text-primary pl-0">Learn more</a>
-                        </li>
-                        <li class="list-group-item bg-warning-light">
-                          <span class="d-block mb-2 fw-bold"> Get more customers!</span>
-                          <p>
-                            Learn how to get more customers with this step-by-step guide from expert marketers!
-                          </p>
-                          <a href="#" class="btn btn-link text-primary pl-0">Learn more</a>
-                        </li>
-                      </ul>
-                    </div>
-               </div>
-             </div>
+            <div class="row pl-3">
+              <div class="col-md-12 pl-3">
+                <h3>Polished font size classes</h3>
+                <div class="fs-smallest">.fs-smallest</div>
+                <div class="fs-smaller">.fs-smaller</div>
+                <div class="fs-1">.fs-1 (default font size)</div>
+                <div class="fs-2">.fs-2</div>
+                <div class="fs-3">.fs-3</div>
+                <div class="fs-4">.fs-4</div>
+                <div class="fs-5">.fs-5</div>
+                <div class="fs-6">.fs-6</div>
+                <div class="fs-7">.fs-7</div>
+                <div class="fs-8">.fs-8</div>
+                <div class="fs-9">.fs-9</div>
+              </div>
             </div>
 
 
-            <div class="col-lg-5 pt-2 pb-2 bg-white shadow-sm border-left border-white">
 
-              <div class="row p-4">
-                <div class="col-md-6 mb-1 mb-sm-0">
-                  <select class="form-control" name="" id="">
-                    <option value="1">All Channel</option>
-                    <option value="2">Front store</option>
-                    <option value="3">Mobile</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <select class="form-control" name="" id="">
-                    <option value="1">Today</option>
-                    <option value="2">Last 7 Days</option>
-                    <option value="3">This Month</option>
-                  </select>
-                </div>
-              </div>
-              <hr class="m-0">
-
-              <div class="row p-4">
-                <div class="col-md-6">
-                    <small class="fw-bold">TOTAL SALES</small>
-                    <h4 class="fw-normal">$33,400.00</h4>
-                </div>
-                <div class="col-md-6 text-right text-muted">
-                    <span class="d-block">Jun 1</span>
-                    <span>239 orders</span>
-                </div>
-              </div>
-
-              <small class="fw-bold mx-4">TOTAL SALES BY CHANNEL</small>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <div class="row">
-                      <div class="col-md-6">
-                        <span style="text-decoration: none !important">Front Store</span>
-                        <h5 class="mt-2">$44,430.00</h5>
-                      </div>
-                      <div class="col-md-6 text-right">
-                        <a href="#" class="btn btn-link text-right d-block p-0">View dashboard</a>
-                        <span class="text-muted">445,342 orders</span>
-                      </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <span style="text-decoration: none !important">Mobile Store</span>
-                          <h5 class="mt-2">$3,932.00</h5>
-                        </div>
-                        <div class="col-md-6 text-right">
-                          <a href="#" class="btn btn-link text-right d-block p-0">View dashboard</a>
-                          <span class="text-muted">32,322 orders</span>
-                        </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
   </div>
@@ -242,7 +165,7 @@
 
     <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent2">
       <ul class="navbar-nav">
-        <li class="col-lg-3"></li>
+        <li class="col-lg-3 col-md-6 mb-2 col-sm-6"></li>
         <form class="form-inline">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>

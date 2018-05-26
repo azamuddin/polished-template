@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Polished</title>
+  <!-- <link rel="stylesheet" href="http://localhost:3000/css/bootstrap4/dist/css/bootstrap-custom.css?v=datetime"> -->
+  <link rel="stylesheet" href="../dist/polished.min.css">
+  <!-- <link rel="stylesheet" href="polaris-navbar.css"> -->
+  <link rel="stylesheet" href="../dist/iconic/css/open-iconic-bootstrap.min.css">
+
+  <link rel="icon" href="assets/polished-logo-small.png">
+
+  <style>
+    .grid-highlight {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #5c6ac4;
+      border: 1px solid #202e78;
+      color: #fff;
+    }
+
+    hr {
+      margin: 6rem 0;
+    }
+
+    hr+.display-3,
+    hr+.display-2+.display-3 {
+      margin-bottom: 2rem;
+    }
+  </style>
+  <script type="text/javascript">
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js') + (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? ' svg' : ' no-svg');
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '564839313686027');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=564839313686027&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg p-0">
+    <div class="container">
+      <a class="navbar-brand p-2 text-center" href="index.html">
+        <img src="assets/polished-logo-small.png" alt="logo" style="width: 50px"> Polished
+      </a>
+      <button class="btn btn-link d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Demo</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="getting-started.html">Getting started
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="col-md-12 pt-4 h-100 pb-4 mb-4">
+      <h2 class="border-bottom pb-2">Getting Started Guide</h2>
+      <br>
+      <h3>CSS file</h3>
+      <p>
+        To start using polished, download or clone the repo and simply include <span class="fw-bold">polished.min.css</span> located in dist folder to your project file.
+      </p>
+      <p>
+        Bootstrap 4.1.1 are already bundled,<b> you don't need to include bootstrap css file manually</b>.
+      </p>
+      <h3>Javascript file</h3>
+      <p>
+        You can use cdn for javascript's files that's required by Bootstrap. 
+
+        <div class="bg-secondary p-1">
+        <pre class="text-dark">
+          &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"&gt;&lt;/script&gt;
+          &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"&gt;&lt;/script&gt;
+          &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"&gt;&lt;/script&gt;
+        </pre>
+        </div>
+      </p>
+
+      <h3>Icon</h3>
+      <p>
+        By default, Polished suggests iconic. To use this iconpack, include the <b>open-iconic-bootstrap.min.css</b> file located in the dist/iconic/css folder.
+        Of course you can replace iconic with any iconpack you wish.
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid bg-dark-lighter text-light" style="position: absolute; bottom: 0">
+    <div class="col-md-12 p-3 d-flex">
+      <div class="col-6">
+        &copy; 2018 <a class="text-info-lightest" target="_blank" href="https://arrowfunxtion.com">ArrowFunxtion</a> by Muhammad Azamuddin 
+      </div>
+
+      <div class="col-6 text-right">
+        <a target="_blank" class="text-info-lightest" href="https://facebook.com/arrowfunxtion">Facebook Page</a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
