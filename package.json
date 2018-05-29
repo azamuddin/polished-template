@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-polaris",
+  "name": "polished-admin-template",
   "version": "0.0.1",
   "settings": {
     "sass_source": "./scss/polished.scss",
