@@ -64,4 +64,29 @@
     border-bottom: 2px solid polarisColor(indigo);
   }
 
+  .dataTables_paginate{
+    @extend .p-4;
+    a.current{
+      @extend .btn;
+      @extend .btn-primary; 
+      @extend .btn-sm;
+      @extend .m-2;
+    }
+    a.previous, a.next{
+      @extend .btn;
+      @extend .btn-secondary; 
+      @extend .border;
+      @extend .btn-sm;
+      @extend .m-2;
+    }
+
+    a.paginate_button {
+      @extend .btn;
+      @extend .btn-secondary; 
+      @extend .border;
+      @extend .btn-sm;
+      @extend .m-2;
+    }
+  }
+
 }
